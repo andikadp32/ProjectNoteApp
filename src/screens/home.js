@@ -13,7 +13,7 @@ const NoteCard = ({ item, setCurrentPage, deleteNote }) => (
         text="Ubah"
         fontSize={12}
         width={100}
-        onPress={() => {setCurrentPage('edit')}}
+        onPress={() => setCurrentPage('edit', item.id)}
       />
       <CustomButton
         backgroundColor="#D82148"
